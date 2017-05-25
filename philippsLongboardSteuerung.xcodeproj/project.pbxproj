@@ -12,7 +12,7 @@
 		25EFED451DEA1DB900C07ACB /* Mainn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EFED431DEA1DB900C07ACB /* Mainn.storyboard */; };
 		25EFED471DEA1DB900C07ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25EFED461DEA1DB900C07ACB /* Assets.xcassets */; };
 		25EFED4A1DEA1DB900C07ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EFED481DEA1DB900C07ACB /* LaunchScreen.storyboard */; };
-		25EFED521DEA263700C07ACB /* Blluetoth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFED511DEA263700C07ACB /* Blluetoth.swift */; };
+		25EFED521DEA263700C07ACB /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFED511DEA263700C07ACB /* Bluetooth.swift */; };
 		25EFED541DEA6B1B00C07ACB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EFED531DEA6B1B00C07ACB /* icon.png */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		25EFED461DEA1DB900C07ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25EFED491DEA1DB900C07ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25EFED4B1DEA1DB900C07ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25EFED511DEA263700C07ACB /* Blluetoth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blluetoth.swift; sourceTree = "<group>"; };
+		25EFED511DEA263700C07ACB /* Bluetooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 		25EFED531DEA6B1B00C07ACB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +65,7 @@
 				25EFED461DEA1DB900C07ACB /* Assets.xcassets */,
 				25EFED481DEA1DB900C07ACB /* LaunchScreen.storyboard */,
 				25EFED4B1DEA1DB900C07ACB /* Info.plist */,
-				25EFED511DEA263700C07ACB /* Blluetoth.swift */,
+				25EFED511DEA263700C07ACB /* Bluetooth.swift */,
 			);
 			path = philippsLongboardSteuerung;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 			files = (
 				25EFED421DEA1DB900C07ACB /* MyVC.swift in Sources */,
 				25EFED401DEA1DB900C07ACB /* AppDelegate.swift in Sources */,
-				25EFED521DEA263700C07ACB /* Blluetoth.swift in Sources */,
+				25EFED521DEA263700C07ACB /* Bluetooth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
