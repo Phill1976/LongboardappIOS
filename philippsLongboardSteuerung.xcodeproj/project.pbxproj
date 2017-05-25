@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25AA994F1ED6C73900B4104B /* NRFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AA994E1ED6C73900B4104B /* NRFManager.swift */; };
 		25EFED401DEA1DB900C07ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFED3F1DEA1DB900C07ACB /* AppDelegate.swift */; };
 		25EFED421DEA1DB900C07ACB /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFED411DEA1DB900C07ACB /* MyVC.swift */; };
 		25EFED451DEA1DB900C07ACB /* Mainn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EFED431DEA1DB900C07ACB /* Mainn.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25AA994E1ED6C73900B4104B /* NRFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRFManager.swift; sourceTree = "<group>"; };
 		25EFED3C1DEA1DB900C07ACB /* philippsLongboardSteuerung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = philippsLongboardSteuerung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EFED3F1DEA1DB900C07ACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25EFED411DEA1DB900C07ACB /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				25EFED481DEA1DB900C07ACB /* LaunchScreen.storyboard */,
 				25EFED4B1DEA1DB900C07ACB /* Info.plist */,
 				25EFED511DEA263700C07ACB /* Bluetooth.swift */,
+				25AA994E1ED6C73900B4104B /* NRFManager.swift */,
 			);
 			path = philippsLongboardSteuerung;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AA994F1ED6C73900B4104B /* NRFManager.swift in Sources */,
 				25EFED421DEA1DB900C07ACB /* MyVC.swift in Sources */,
 				25EFED401DEA1DB900C07ACB /* AppDelegate.swift in Sources */,
 				25EFED521DEA263700C07ACB /* Bluetooth.swift in Sources */,
