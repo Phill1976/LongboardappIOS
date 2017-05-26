@@ -89,7 +89,7 @@ class MyVC: UIViewController {
             percent = 0
         }
         updateBar(power: percent)
-        sendBluetooth(power: percent)
+//        sendBluetooth(power: percent)
     }
     
     func fadeInCurser(){

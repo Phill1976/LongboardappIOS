@@ -14,12 +14,13 @@ import Foundation
 class BluetoothLB{
 	var manager: NRFManager
 	init() {
-		manager = NRFManager(delegate: self, autoConnect: true);
-		manager.connect( "naemSetUpINTHeArduineCode" )
-		manager.writeString("test!!")
+		manager = NRFManager(autoConnect: true)
+		manager.delegate = self
 		
 	}
 	func sendBluetooth(power: CGFloat){
+		manager.connect( "naemSetUpINTHeArduineCode" )
+		manager.writeString("test!!")
 		print("sended power: \(power) to the longboard")
 	}
 	
