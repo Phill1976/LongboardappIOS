@@ -105,7 +105,7 @@
 				TargetAttributes = {
 					25EFED3B1DEA1DB900C07ACB = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = V788Q96PYD;
+						DevelopmentTeam = 8LHEMF6HH4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -273,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V788Q96PYD;
+				DEVELOPMENT_TEAM = 8LHEMF6HH4;
 				INFOPLIST_FILE = philippsLongboardSteuerung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.com.philippsLongboardSteuerung;
@@ -286,7 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V788Q96PYD;
+				DEVELOPMENT_TEAM = 8LHEMF6HH4;
 				INFOPLIST_FILE = philippsLongboardSteuerung/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = none.com.philippsLongboardSteuerung;

@@ -9,8 +9,8 @@ import AudioToolbox // importiert Datenbank für 3D Touch
 class MyVC: UIViewController {
     let MAX_SCROLL: CGFloat = 150
     let START_FORCE: CGFloat = 3
-    let test = "fd;bgheai;rojn"
-    
+
+	var ble: BluetoothLB!
     var unlocked = false
     var driving = false
     
@@ -20,16 +20,21 @@ class MyVC: UIViewController {
     @IBOutlet weak var innerHandle: UIView!
     @IBOutlet weak var outerHandle: UIView!
     @IBOutlet weak var powerLabel: UILabel!
-    
+	@IBOutlet weak var verbinden: UIButton!
+
+
+
     var pan: UIPanGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
-        outerHandle.alpha = 0
-        pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
+		ble = BluetoothLB()
+		ble.manager.delegate = self
+		ble.connect()
+		pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
+		outerHandle.alpha = 0
         view.addGestureRecognizer(pan)
-        
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         innerHandle.layer.cornerRadius = innerHandle.frame.width/2
         outerHandle.layer.cornerRadius = outerHandle.frame.width/2
@@ -56,15 +61,19 @@ class MyVC: UIViewController {
             }
         }
     }
-    
+
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         deactivate()
     }
+
+	@IBAction func verbindenPressed(_ sender: Any) {
+		ble.connect()
+	}
     func deactivate(){
         unlocked = false
         driving = false
         fadeOutCurser()
-        
+		ble.sendBluetooth(power: 0, force: true)
     }
     func handlePan(){
         guard unlocked else {
@@ -89,7 +98,7 @@ class MyVC: UIViewController {
             percent = 0
         }
         updateBar(power: percent)
-//        sendBluetooth(power: percent)
+        ble.sendBluetooth(power: percent)
     }
     
     func fadeInCurser(){
@@ -143,12 +152,20 @@ func getCutToPercent(val: CGFloat) -> CGFloat{
     }
     return returnVal
 }
-func add(value1: Int, vlaue2: Int){
-    //excutable
-    //    let a = "tet" + String(value1)
-    //            "tet\(value1)"
-    print("should add: \(value1) and \(vlaue2)")
-    
+
+extension MyVC : NRFManagerDelegate {
+	func nrfDidConnect(_ nrfManager:NRFManager){
+		verbinden.isEnabled = false
+		verbinden.isHidden = true
+
+		ble.sendBluetooth(power: 0, force: true)
+	}
+	func nrfDidDisconnect(_ nrfManager:NRFManager){
+		verbinden.isEnabled = true
+		verbinden.isHidden = false
+	}
+	func nrfReceivedData(_ nrfManager:NRFManager, data:Data?, string:String?){
+	}
 }
 
 

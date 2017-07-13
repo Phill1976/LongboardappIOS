@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,6 +46,16 @@
                                     <constraint firstAttribute="width" constant="4" id="u6G-Jj-Bix"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fR8-9i-hyQ">
+                                <rect key="frame" x="130.5" y="311.5" width="114" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Verbinden">
+                                    <color key="titleColor" red="0.99010291466346156" green="1" blue="0.98020582932692313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="verbindenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpE-dG-WTb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -54,6 +64,8 @@
                             <constraint firstItem="5nj-YT-NEf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="d7C-KX-FNe"/>
                             <constraint firstItem="5nj-YT-NEf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="dWT-DF-tmv"/>
                             <constraint firstItem="mVN-F7-vaw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j0C-gO-uX9"/>
+                            <constraint firstItem="fR8-9i-hyQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oqC-Rl-ccH"/>
+                            <constraint firstItem="fR8-9i-hyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uje-zo-zYr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -67,6 +79,7 @@
                         <outlet property="powerLabel" destination="5nj-YT-NEf" id="sKR-ch-W0z"/>
                         <outlet property="sideBar" destination="mVN-F7-vaw" id="FC6-yx-MeT"/>
                         <outlet property="topBarDist" destination="j0C-gO-uX9" id="8FA-iF-Ky4"/>
+                        <outlet property="verbinden" destination="fR8-9i-hyQ" id="Qfy-VK-4il"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
